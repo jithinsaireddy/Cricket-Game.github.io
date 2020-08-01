@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cricket - Single Player</title>
-    <link rel="stylesheet" href="computer.css">
-    <script src="computer.js" type="module"></script>
+    <title>Cricket-Two Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/app.js" type="module"></script>
 </head>
 
 <body>
@@ -20,27 +20,44 @@
             </div>
             <div id="score-display">
                 <div id="p1-scr">
-                    <h3 id="name">Player-1:</h3>
-                    <img src="/images/Cricket.png" alt="p1-icon">
+                    <h3 id="name1">Player 1:</h3>
+                    <img src="../images/Cricket.png" alt="p1-icon">
                     <h4>Score:</h4>
                     <span id="p1s" style="font-size: 2.2em;">0</span>
                     <h4>Wickets:</h4>
                     <span id="p1w" style="font-size: 2em;">0</span>
-
+                    <br>
+                    <button id="dice1" onclick>Play</button>
                 </div>
                 <div id="p2-scr">
-                    <h3>Computer:</h3>
-                    <img src="/images/Cricket_Bat_Ball.png" alt="p2-icon">
+                    <h3 id="name2">Player 2:</h3>
+                    <img src="../images/Cricket_Bat_Ball.png" alt="p2-icon">
                     <h4>Score:</h4>
                     <span id="p2s" style="font-size: 2.2em;">0</span>
                     <h4>Wickets:</h4>
                     <span id="p2w" style="font-size: 2em;">0</span>
-                    <!-- <br>
-            <button id="dice2" onclick>Play</button> -->
+                    <br>
+                    <button id="dice2" onclick>Play</button>
                 </div>
             </div>
-            <button id="dice1" onclick>Play</button>
+            <!-- <div id="score-display">
+          <div id="p1-scr">
+            <h3>Player 1-Score:</h3>
+            <span id="p1s" style="font-size: 2.2em;">0</span>
+            <h4>Player 1-Wickets:</h4>
+            <span id="p1w" style="font-size: 2em;">0</span>
             <br>
+            <button id="dice1" onclick>Play</button>
+          </div>
+          <div id="p2-scr">
+            <h3>Player 2-Score:</h3>
+            <span id="p2s" style="font-size: 2.2em;">0</span>
+            <h4>Player 2-Wickets:</h4>
+            <span id="p2w" style="font-size: 2em;">0</span>
+            <br>
+            <button id="dice2" onclick>Play</button>
+          </div>
+        </div> -->
             <div id="msg">
                 <span id="msg1"></span>
             </div>
@@ -165,13 +182,12 @@
         <audio id="six_audio" src="../audio/six.mp3"></audio>
         <audio id="extrarun_audio" src="../audio/extra run.mp3"></audio>
     </div>
-
     <div class="popup" id="popup" style="visibility: hidden;">
         <h1>Welcome to result </h1>
         <img src="/images/tumblr_5dd57c2cb2e5801f662bf8c8a7fa91ab_4919f4c5_500.gif" alt="" srcset="">
         <h2 id="result"></h2>
         <button id="one" type="button" onclick="history.go(0)">Try Again</button>
-        <button id="one"><a href="./game.html">Two Player</a></button>
+        <button id="one"><a href="./computer.html">Single Player</a></button>
 
     </div>
 </body>
